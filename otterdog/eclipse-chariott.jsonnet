@@ -39,5 +39,16 @@ orgs.newOrg('eclipse-chariott') {
         },
       ],
     },
+    orgs.newRepo('chariott-example-applications') {
+      allow_update_branch: false,
+      description: "Chariott example applications and integrations with other components",
+      web_commit_signoff_required: false,
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          dismisses_stale_reviews: true,
+          required_approving_review_count: 1,
+        },
+      ],
+    },
   ],
 }
