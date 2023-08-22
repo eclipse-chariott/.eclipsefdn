@@ -21,8 +21,6 @@ orgs.newOrg('eclipse-chariott') {
     orgs.newRepo('Agemo') {
       allow_update_branch: false,
       description: "Agemo",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
@@ -34,8 +32,6 @@ orgs.newOrg('eclipse-chariott') {
     orgs.newRepo('chariott') {
       allow_update_branch: false,
       description: "chariott",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
