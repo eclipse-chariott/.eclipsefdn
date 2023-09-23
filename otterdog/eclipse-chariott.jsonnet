@@ -17,7 +17,9 @@ orgs.newOrg('eclipse-chariott') {
   },
   _repositories+:: [
     orgs.newRepo('Agemo') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "Agemo",
       web_commit_signoff_required: false,
       branch_protection_rules: [
@@ -28,7 +30,9 @@ orgs.newOrg('eclipse-chariott') {
       ],
     },
     orgs.newRepo('chariott') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "chariott",
       web_commit_signoff_required: false,
       branch_protection_rules: [
@@ -39,7 +43,9 @@ orgs.newOrg('eclipse-chariott') {
       ],
     },
     orgs.newRepo('chariott-example-applications') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "Chariott example applications and integrations with other components",
       web_commit_signoff_required: false,
       branch_protection_rules: [
