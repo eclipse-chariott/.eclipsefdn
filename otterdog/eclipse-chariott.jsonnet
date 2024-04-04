@@ -5,7 +5,6 @@ orgs.newOrg('eclipse-chariott') {
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "",
     name: "Eclipse Chariott",
-    readers_can_create_discussions: true,
     web_commit_signoff_required: false,
   },
   _repositories+:: [
