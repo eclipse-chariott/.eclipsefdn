@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-chariott') {
+orgs.newOrg('automotive.chariott', 'eclipse-chariott') {
   settings+: {
     description: "",
     name: "Eclipse Chariott",
